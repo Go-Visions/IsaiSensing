@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		451BD08C23D07C4D00C2668B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08B23D07C4D00C2668B /* AppDelegate.swift */; };
+		451BD08E23D07C4D00C2668B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08D23D07C4D00C2668B /* SceneDelegate.swift */; };
+		451BD09023D07C4D00C2668B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08F23D07C4D00C2668B /* ViewController.swift */; };
+		451BD09323D07C4D00C2668B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09123D07C4D00C2668B /* Main.storyboard */; };
+		451BD09523D07C4F00C2668B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09423D07C4F00C2668B /* Assets.xcassets */; };
+		451BD09823D07C4F00C2668B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09623D07C4F00C2668B /* LaunchScreen.storyboard */; };
+		451BD0A323D07C5000C2668B /* IsaiSensingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0A223D07C5000C2668B /* IsaiSensingTests.swift */; };
+		451BD0AE23D07C5000C2668B /* IsaiSensingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0AD23D07C5000C2668B /* IsaiSensingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		451BD09F23D07C5000C2668B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451BD08023D07C4D00C2668B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 451BD08723D07C4D00C2668B;
+			remoteInfo = IsaiSensing;
+		};
+		451BD0AA23D07C5000C2668B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 451BD08023D07C4D00C2668B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 451BD08723D07C4D00C2668B;
+			remoteInfo = IsaiSensing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		451BD08823D07C4D00C2668B /* IsaiSensing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsaiSensing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		451BD08B23D07C4D00C2668B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		451BD08D23D07C4D00C2668B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		451BD08F23D07C4D00C2668B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		451BD09223D07C4D00C2668B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		451BD09423D07C4F00C2668B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		451BD09723D07C4F00C2668B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		451BD09923D07C4F00C2668B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451BD09E23D07C5000C2668B /* IsaiSensingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsaiSensingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		451BD0A223D07C5000C2668B /* IsaiSensingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaiSensingTests.swift; sourceTree = "<group>"; };
+		451BD0A423D07C5000C2668B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451BD0A923D07C5000C2668B /* IsaiSensingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsaiSensingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		451BD0AD23D07C5000C2668B /* IsaiSensingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaiSensingUITests.swift; sourceTree = "<group>"; };
+		451BD0AF23D07C5000C2668B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		451BD08523D07C4D00C2668B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451BD09B23D07C5000C2668B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451BD0A623D07C5000C2668B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		451BD07F23D07C4D00C2668B = {
+			isa = PBXGroup;
+			children = (
+				451BD08A23D07C4D00C2668B /* IsaiSensing */,
+				451BD0A123D07C5000C2668B /* IsaiSensingTests */,
+				451BD0AC23D07C5000C2668B /* IsaiSensingUITests */,
+				451BD08923D07C4D00C2668B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		451BD08923D07C4D00C2668B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				451BD08823D07C4D00C2668B /* IsaiSensing.app */,
+				451BD09E23D07C5000C2668B /* IsaiSensingTests.xctest */,
+				451BD0A923D07C5000C2668B /* IsaiSensingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		451BD08A23D07C4D00C2668B /* IsaiSensing */ = {
+			isa = PBXGroup;
+			children = (
+				451BD08B23D07C4D00C2668B /* AppDelegate.swift */,
+				451BD08D23D07C4D00C2668B /* SceneDelegate.swift */,
+				451BD08F23D07C4D00C2668B /* ViewController.swift */,
+				451BD09123D07C4D00C2668B /* Main.storyboard */,
+				451BD09423D07C4F00C2668B /* Assets.xcassets */,
+				451BD09623D07C4F00C2668B /* LaunchScreen.storyboard */,
+				451BD09923D07C4F00C2668B /* Info.plist */,
+			);
+			path = IsaiSensing;
+			sourceTree = "<group>";
+		};
+		451BD0A123D07C5000C2668B /* IsaiSensingTests */ = {
+			isa = PBXGroup;
+			children = (
+				451BD0A223D07C5000C2668B /* IsaiSensingTests.swift */,
+				451BD0A423D07C5000C2668B /* Info.plist */,
+			);
+			path = IsaiSensingTests;
+			sourceTree = "<group>";
+		};
+		451BD0AC23D07C5000C2668B /* IsaiSensingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				451BD0AD23D07C5000C2668B /* IsaiSensingUITests.swift */,
+				451BD0AF23D07C5000C2668B /* Info.plist */,
+			);
+			path = IsaiSensingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		451BD08723D07C4D00C2668B /* IsaiSensing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451BD0B223D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensing" */;
+			buildPhases = (
+				451BD08423D07C4D00C2668B /* Sources */,
+				451BD08523D07C4D00C2668B /* Frameworks */,
+				451BD08623D07C4D00C2668B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IsaiSensing;
+			productName = IsaiSensing;
+			productReference = 451BD08823D07C4D00C2668B /* IsaiSensing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		451BD09D23D07C5000C2668B /* IsaiSensingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451BD0B523D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensingTests" */;
+			buildPhases = (
+				451BD09A23D07C5000C2668B /* Sources */,
+				451BD09B23D07C5000C2668B /* Frameworks */,
+				451BD09C23D07C5000C2668B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				451BD0A023D07C5000C2668B /* PBXTargetDependency */,
+			);
+			name = IsaiSensingTests;
+			productName = IsaiSensingTests;
+			productReference = 451BD09E23D07C5000C2668B /* IsaiSensingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		451BD0A823D07C5000C2668B /* IsaiSensingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 451BD0B823D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensingUITests" */;
+			buildPhases = (
+				451BD0A523D07C5000C2668B /* Sources */,
+				451BD0A623D07C5000C2668B /* Frameworks */,
+				451BD0A723D07C5000C2668B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				451BD0AB23D07C5000C2668B /* PBXTargetDependency */,
+			);
+			name = IsaiSensingUITests;
+			productName = IsaiSensingUITests;
+			productReference = 451BD0A923D07C5000C2668B /* IsaiSensingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		451BD08023D07C4D00C2668B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "nishi kosei";
+				TargetAttributes = {
+					451BD08723D07C4D00C2668B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					451BD09D23D07C5000C2668B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 451BD08723D07C4D00C2668B;
+					};
+					451BD0A823D07C5000C2668B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 451BD08723D07C4D00C2668B;
+					};
+				};
+			};
+			buildConfigurationList = 451BD08323D07C4D00C2668B /* Build configuration list for PBXProject "IsaiSensing" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 451BD07F23D07C4D00C2668B;
+			productRefGroup = 451BD08923D07C4D00C2668B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				451BD08723D07C4D00C2668B /* IsaiSensing */,
+				451BD09D23D07C5000C2668B /* IsaiSensingTests */,
+				451BD0A823D07C5000C2668B /* IsaiSensingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		451BD08623D07C4D00C2668B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451BD09823D07C4F00C2668B /* LaunchScreen.storyboard in Resources */,
+				451BD09523D07C4F00C2668B /* Assets.xcassets in Resources */,
+				451BD09323D07C4D00C2668B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451BD09C23D07C5000C2668B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451BD0A723D07C5000C2668B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		451BD08423D07C4D00C2668B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451BD09023D07C4D00C2668B /* ViewController.swift in Sources */,
+				451BD08C23D07C4D00C2668B /* AppDelegate.swift in Sources */,
+				451BD08E23D07C4D00C2668B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451BD09A23D07C5000C2668B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451BD0A323D07C5000C2668B /* IsaiSensingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		451BD0A523D07C5000C2668B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				451BD0AE23D07C5000C2668B /* IsaiSensingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		451BD0A023D07C5000C2668B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 451BD08723D07C4D00C2668B /* IsaiSensing */;
+			targetProxy = 451BD09F23D07C5000C2668B /* PBXContainerItemProxy */;
+		};
+		451BD0AB23D07C5000C2668B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 451BD08723D07C4D00C2668B /* IsaiSensing */;
+			targetProxy = 451BD0AA23D07C5000C2668B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		451BD09123D07C4D00C2668B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451BD09223D07C4D00C2668B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		451BD09623D07C4F00C2668B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451BD09723D07C4F00C2668B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		451BD0B023D07C5000C2668B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		451BD0B123D07C5000C2668B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		451BD0B323D07C5000C2668B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN3V2VZUK8;
+				INFOPLIST_FILE = IsaiSensing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.go-visions.IsaiSensing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		451BD0B423D07C5000C2668B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN3V2VZUK8;
+				INFOPLIST_FILE = IsaiSensing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.go-visions.IsaiSensing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		451BD0B623D07C5000C2668B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN3V2VZUK8;
+				INFOPLIST_FILE = IsaiSensingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.go-visions.IsaiSensingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IsaiSensing.app/IsaiSensing";
+			};
+			name = Debug;
+		};
+		451BD0B723D07C5000C2668B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN3V2VZUK8;
+				INFOPLIST_FILE = IsaiSensingTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.go-visions.IsaiSensingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IsaiSensing.app/IsaiSensing";
+			};
+			name = Release;
+		};
+		451BD0B923D07C5000C2668B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN3V2VZUK8;
+				INFOPLIST_FILE = IsaiSensingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.go-visions.IsaiSensingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IsaiSensing;
+			};
+			name = Debug;
+		};
+		451BD0BA23D07C5000C2668B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SN3V2VZUK8;
+				INFOPLIST_FILE = IsaiSensingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.go-visions.IsaiSensingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IsaiSensing;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		451BD08323D07C4D00C2668B /* Build configuration list for PBXProject "IsaiSensing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451BD0B023D07C5000C2668B /* Debug */,
+				451BD0B123D07C5000C2668B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		451BD0B223D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451BD0B323D07C5000C2668B /* Debug */,
+				451BD0B423D07C5000C2668B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		451BD0B523D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451BD0B623D07C5000C2668B /* Debug */,
+				451BD0B723D07C5000C2668B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		451BD0B823D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				451BD0B923D07C5000C2668B /* Debug */,
+				451BD0BA23D07C5000C2668B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 451BD08023D07C4D00C2668B /* Project object */;
+}
