@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeController.swift
 //  IsaiSensing
 //
 //  Created by nishi kosei on 2020/01/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, MWMDelegate {
+class HomeController: UIViewController, MWMDelegate {
     
     let mwm = MWMDevice.sharedInstance()
 
