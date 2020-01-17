@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		451BD08C23D07C4D00C2668B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08B23D07C4D00C2668B /* AppDelegate.swift */; };
 		451BD08E23D07C4D00C2668B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08D23D07C4D00C2668B /* SceneDelegate.swift */; };
-		451BD09023D07C4D00C2668B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08F23D07C4D00C2668B /* ViewController.swift */; };
+		451BD09023D07C4D00C2668B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08F23D07C4D00C2668B /* HomeController.swift */; };
 		451BD09323D07C4D00C2668B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09123D07C4D00C2668B /* Main.storyboard */; };
 		451BD09523D07C4F00C2668B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09423D07C4F00C2668B /* Assets.xcassets */; };
 		451BD09823D07C4F00C2668B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09623D07C4F00C2668B /* LaunchScreen.storyboard */; };
 		451BD0A323D07C5000C2668B /* IsaiSensingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0A223D07C5000C2668B /* IsaiSensingTests.swift */; };
 		451BD0AE23D07C5000C2668B /* IsaiSensingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0AD23D07C5000C2668B /* IsaiSensingUITests.swift */; };
+		451BD0C023D0A3A900C2668B /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 451BD0BD23D0A3A900C2668B /* libMWMSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		451BD08823D07C4D00C2668B /* IsaiSensing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsaiSensing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		451BD08B23D07C4D00C2668B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		451BD08D23D07C4D00C2668B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		451BD08F23D07C4D00C2668B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		451BD08F23D07C4D00C2668B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		451BD09223D07C4D00C2668B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		451BD09423D07C4F00C2668B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451BD09723D07C4F00C2668B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		451BD0A923D07C5000C2668B /* IsaiSensingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsaiSensingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		451BD0AD23D07C5000C2668B /* IsaiSensingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaiSensingUITests.swift; sourceTree = "<group>"; };
 		451BD0AF23D07C5000C2668B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451BD0BC23D0A3A900C2668B /* MWMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDevice.h; sourceTree = "<group>"; };
+		451BD0BD23D0A3A900C2668B /* libMWMSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMWMSDK.a; sourceTree = "<group>"; };
+		451BD0BE23D0A3A900C2668B /* MWMDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDelegate.h; sourceTree = "<group>"; };
+		451BD0BF23D0A3A900C2668B /* MWMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
+		451BD0C123D0A3FD00C2668B /* IsaiSensing_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsaiSensing_Bridging_Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451BD0C023D0A3A900C2668B /* libMWMSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 		451BD07F23D07C4D00C2668B = {
 			isa = PBXGroup;
 			children = (
+				451BD0BB23D0A38200C2668B /* MindWaveSDK */,
 				451BD08A23D07C4D00C2668B /* IsaiSensing */,
 				451BD0A123D07C5000C2668B /* IsaiSensingTests */,
 				451BD0AC23D07C5000C2668B /* IsaiSensingUITests */,
@@ -99,13 +107,16 @@
 		451BD08A23D07C4D00C2668B /* IsaiSensing */ = {
 			isa = PBXGroup;
 			children = (
-				451BD08B23D07C4D00C2668B /* AppDelegate.swift */,
-				451BD08D23D07C4D00C2668B /* SceneDelegate.swift */,
-				451BD08F23D07C4D00C2668B /* ViewController.swift */,
+				451BD0C323D1929200C2668B /* Application */,
+				451BD0C723D193F800C2668B /* Resource */,
+				451BD0C623D193E600C2668B /* Domain */,
+				451BD0C523D1934900C2668B /* Infrastructure */,
+				451BD0C423D192A700C2668B /* Presentation */,
 				451BD09123D07C4D00C2668B /* Main.storyboard */,
 				451BD09423D07C4F00C2668B /* Assets.xcassets */,
 				451BD09623D07C4F00C2668B /* LaunchScreen.storyboard */,
 				451BD09923D07C4F00C2668B /* Info.plist */,
+				451BD0C123D0A3FD00C2668B /* IsaiSensing_Bridging_Header.h */,
 			);
 			path = IsaiSensing;
 			sourceTree = "<group>";
@@ -126,6 +137,79 @@
 				451BD0AF23D07C5000C2668B /* Info.plist */,
 			);
 			path = IsaiSensingUITests;
+			sourceTree = "<group>";
+		};
+		451BD0BB23D0A38200C2668B /* MindWaveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				451BD0BD23D0A3A900C2668B /* libMWMSDK.a */,
+				451BD0BE23D0A3A900C2668B /* MWMDelegate.h */,
+				451BD0BC23D0A3A900C2668B /* MWMDevice.h */,
+				451BD0BF23D0A3A900C2668B /* MWMEnum.h */,
+			);
+			path = MindWaveSDK;
+			sourceTree = "<group>";
+		};
+		451BD0C323D1929200C2668B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				451BD08B23D07C4D00C2668B /* AppDelegate.swift */,
+				451BD08D23D07C4D00C2668B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		451BD0C423D192A700C2668B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				451BD0CA23D196AE00C2668B /* Home */,
+				451BD0C923D196A400C2668B /* Common */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		451BD0C523D1934900C2668B /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		451BD0C623D193E600C2668B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				451BD0C823D1966E00C2668B /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		451BD0C723D193F800C2668B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		451BD0C823D1966E00C2668B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		451BD0C923D196A400C2668B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		451BD0CA23D196AE00C2668B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				451BD08F23D07C4D00C2668B /* HomeController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				451BD09023D07C4D00C2668B /* ViewController.swift in Sources */,
+				451BD09023D07C4D00C2668B /* HomeController.swift in Sources */,
 				451BD08C23D07C4D00C2668B /* AppDelegate.swift in Sources */,
 				451BD08E23D07C4D00C2668B /* SceneDelegate.swift in Sources */,
 			);
@@ -441,8 +525,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MindWaveSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.go-visions.IsaiSensing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)_Bridging_Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,8 +548,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MindWaveSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.go-visions.IsaiSensing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)_Bridging_Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
