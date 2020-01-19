@@ -9,7 +9,7 @@
 import Foundation
 class ApplicationConfig {
     class API {
-        static let baseUrlString = "https://aaa/api"
+        static let baseUrlString = "https:// /api"
 //        #if LOCAL
 //           static let baseUrlString = ""
 //        #elseif STAGING

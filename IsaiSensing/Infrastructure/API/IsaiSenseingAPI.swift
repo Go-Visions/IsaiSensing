@@ -108,16 +108,103 @@ class IsaiSensingAPI {
 extension IsaiSensingAPI {
     /// MindWave Mobile2 データをサーバにpost
     /// delta, theta, alpha(low,hight)それぞれをpost
-    class PostMWMData {
+    class PostMWMPowerDeltaData {
         func request(eegPowerDelta: EegPowerDelta, completionHandler: @escaping (Response) -> Void) {
             let parameters: Parameters = [
                 "delta": eegPowerDelta.delta,
                 "theta": eegPowerDelta.theta,
                 "lowAlpha": eegPowerDelta.lowAlpha,
-                "highAlpha": eegPowerDelta.highAlpha
+                "highAlpha": eegPowerDelta.highAlpha,
+                "user_id": eegPowerDelta.userId,
+                "mwmcreated_at": eegPowerDelta.mwmcreatedAt
             ]
             IsaiSensingAPI.instance.request(
                 endPoint: "/eegpowerdelta",
+                parameters: parameters) { response, _ in
+                    let json: JSON
+                    switch response {
+                    case .success(let value): json = value
+                    case .failure(let error):
+                        completionHandler(Response(
+                            resultCode: IsaiSensingAPI.ResultCode.fromError(error).code,
+                            errorMessage: error.localizedDescription,
+                            json: JSON()))
+
+                        return
+                    }
+                    let resultCode = json["resultCode"].int
+                    let errorMessage = json["errorMessage"].string
+                    completionHandler(Response(
+                        resultCode: resultCode,
+                        errorMessage: errorMessage,
+                        json: json
+                    ))
+            }
+        }
+
+        struct Response {
+            let resultCode: Int?
+            let errorMessage: String?
+            let json: JSON
+        }
+    }
+    
+    /// MindWave Mobile2 データをサーバにpost
+    /// delta, theta, alpha(low,hight)それぞれをpost
+    class PostMWMPowerBetaData {
+        func request(eegPowerLowBeta: EegPowerLowBeta, completionHandler: @escaping (Response) -> Void) {
+            let parameters: Parameters = [
+                "lowBeta": eegPowerLowBeta.lowBeta,
+                "highBeta": eegPowerLowBeta.highBeta,
+                "lowGamma": eegPowerLowBeta.lowGamma,
+                "midGamma": eegPowerLowBeta.midGamma,
+                "user_id": eegPowerLowBeta.userId,
+                "mwmcreated_at": eegPowerLowBeta.mwmcreatedAt
+            ]
+            IsaiSensingAPI.instance.request(
+                endPoint: "/eegpowerlowbeta",
+                parameters: parameters) { response, _ in
+                    let json: JSON
+                    switch response {
+                    case .success(let value): json = value
+                    case .failure(let error):
+                        completionHandler(Response(
+                            resultCode: IsaiSensingAPI.ResultCode.fromError(error).code,
+                            errorMessage: error.localizedDescription,
+                            json: JSON()))
+
+                        return
+                    }
+                    let resultCode = json["resultCode"].int
+                    let errorMessage = json["errorMessage"].string
+                    completionHandler(Response(
+                        resultCode: resultCode,
+                        errorMessage: errorMessage,
+                        json: json
+                    ))
+            }
+        }
+
+        struct Response {
+            let resultCode: Int?
+            let errorMessage: String?
+            let json: JSON
+        }
+    }
+    
+    /// MindWave Mobile2 データをサーバにpost
+    /// delta, theta, alpha(low,hight)それぞれをpost
+    class PostMWMeSenseData {
+        func request(eegeSense: EegeSense, completionHandler: @escaping (Response) -> Void) {
+            let parameters: Parameters = [
+                "poorSignal": eegeSense.poorSignal,
+                "attention": eegeSense.attention,
+                "meditation": eegeSense.meditation,
+                "user_id": eegeSense.userId,
+                "mwmcreated_at": eegeSense.mwmcreatedAt
+            ]
+            IsaiSensingAPI.instance.request(
+                endPoint: "/esense",
                 parameters: parameters) { response, _ in
                     let json: JSON
                     switch response {

@@ -21,6 +21,9 @@
 		451BD0D123D3271500C2668B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D023D3271500C2668B /* AppError.swift */; };
 		451BD0D323D3278500C2668B /* ApplicationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D223D3278500C2668B /* ApplicationConfig.swift */; };
 		451BD0D523D3285A00C2668B /* ApplicationsUIString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D423D3285A00C2668B /* ApplicationsUIString.swift */; };
+		451BD0D723D44AD500C2668B /* EegPowerLowBeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D623D44AD500C2668B /* EegPowerLowBeta.swift */; };
+		451BD0D923D44AE300C2668B /* EeSense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D823D44AE300C2668B /* EeSense.swift */; };
+		451BD0DC23D4522300C2668B /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0DB23D4522300C2668B /* Date+String.swift */; };
 		93A1497C761B84E27B55F293 /* Pods_IsaiSensing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C592772B3D11DE10A2B49D6A /* Pods_IsaiSensing.framework */; };
 		9E94A8322AEDD2D84C93813A /* Pods_IsaiSensingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852DA9A9B4C03B7BD1189D7 /* Pods_IsaiSensingTests.framework */; };
 		FC92B9B0948CE031BC766FA2 /* Pods_IsaiSensingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A41C330DB8D321748AC5 /* Pods_IsaiSensingUITests.framework */; };
@@ -69,6 +72,9 @@
 		451BD0D023D3271500C2668B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		451BD0D223D3278500C2668B /* ApplicationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfig.swift; sourceTree = "<group>"; };
 		451BD0D423D3285A00C2668B /* ApplicationsUIString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsUIString.swift; sourceTree = "<group>"; };
+		451BD0D623D44AD500C2668B /* EegPowerLowBeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EegPowerLowBeta.swift; sourceTree = "<group>"; };
+		451BD0D823D44AE300C2668B /* EeSense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EeSense.swift; sourceTree = "<group>"; };
+		451BD0DB23D4522300C2668B /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		5C60EE799BE90E9B52705BBA /* Pods-IsaiSensing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensing.debug.xcconfig"; path = "Target Support Files/Pods-IsaiSensing/Pods-IsaiSensing.debug.xcconfig"; sourceTree = "<group>"; };
 		7C79A41C330DB8D321748AC5 /* Pods_IsaiSensingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsaiSensingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847BC285CA1CBF574CC7CEA4 /* Pods-IsaiSensingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensingTests.release.xcconfig"; path = "Target Support Files/Pods-IsaiSensingTests/Pods-IsaiSensingTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				451BD0CB23D3257500C2668B /* EegPowerDelta.swift */,
+				451BD0D623D44AD500C2668B /* EegPowerLowBeta.swift */,
+				451BD0D823D44AE300C2668B /* EeSense.swift */,
 				451BD0D023D3271500C2668B /* AppError.swift */,
 			);
 			path = Model;
@@ -232,6 +240,7 @@
 		451BD0C923D196A400C2668B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				451BD0DA23D4521100C2668B /* Util */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -250,6 +259,14 @@
 				451BD0CE23D3262500C2668B /* IsaiSenseingAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		451BD0DA23D4521100C2668B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				451BD0DB23D4522300C2668B /* Date+String.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		C518E779080D4F0274122FC5 /* Frameworks */ = {
@@ -502,6 +519,9 @@
 				451BD0D123D3271500C2668B /* AppError.swift in Sources */,
 				451BD0CF23D3262500C2668B /* IsaiSenseingAPI.swift in Sources */,
 				451BD0CC23D3257500C2668B /* EegPowerDelta.swift in Sources */,
+				451BD0D923D44AE300C2668B /* EeSense.swift in Sources */,
+				451BD0DC23D4522300C2668B /* Date+String.swift in Sources */,
+				451BD0D723D44AD500C2668B /* EegPowerLowBeta.swift in Sources */,
 				451BD08E23D07C4D00C2668B /* SceneDelegate.swift in Sources */,
 				451BD0D323D3278500C2668B /* ApplicationConfig.swift in Sources */,
 			);

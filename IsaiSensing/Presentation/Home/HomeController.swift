@@ -12,6 +12,7 @@ import SwiftyJSON
 class HomeController: UIViewController, MWMDelegate {
     
     let mwm = MWMDevice.sharedInstance()
+    let userId:Int = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,8 +55,9 @@ class HomeController: UIViewController, MWMDelegate {
         print("theta = " ,theta)
         print("lowAlpha = " ,lowAlpha)
         print("highAlpha = " ,highAlpha)
-        let eegPowerDeltaData = EegPowerDelta(delta: Int(delta), theta: Int(theta), lowAlpha: Int(lowAlpha), highAlpha: Int(highAlpha))
-        IsaiSensingAPI.PostMWMData().request(eegPowerDelta: eegPowerDeltaData) { response in
+        let dateString = Date().toString(format: "yyyy-MM-dd HH:mm:ss")
+        let eegPowerDeltaData = EegPowerDelta(delta: Int(delta), theta: Int(theta), lowAlpha: Int(lowAlpha), highAlpha: Int(highAlpha), userId: self.userId, mwmcreatedAt: dateString)
+        IsaiSensingAPI.PostMWMPowerDeltaData().request(eegPowerDelta: eegPowerDeltaData) { response in
             let json = response.json
             if json["code"].intValue == ApplicationConfig.API.responseSuccess {
                 print("post success")
@@ -76,6 +78,16 @@ class HomeController: UIViewController, MWMDelegate {
         print("highBeta = " ,highBeta)
         print("lowGamma = " ,lowGamma)
         print("lowGamma = " ,midGamma)
+        let dateString = Date().toString(format: "yyyy-MM-dd HH:mm:ss")
+        let eegPowerLowBeta = EegPowerLowBeta(lowBeta: Int(lowBeta), highBeta: Int(highBeta), lowGamma: Int(lowGamma), midGamma: Int(midGamma), userId: self.userId, mwmcreatedAt: dateString)
+        IsaiSensingAPI.PostMWMPowerBetaData().request(eegPowerLowBeta: eegPowerLowBeta) { response in
+            let json = response.json
+            if json["code"].intValue == ApplicationConfig.API.responseSuccess {
+                print("post success")
+            } else {
+                print("post fauilure")
+            }
+        }
     }
     
     /// 脳波データ取得時のメソッド(poorSignal, attention meditation)
@@ -87,6 +99,16 @@ class HomeController: UIViewController, MWMDelegate {
         print("poorSignal = " ,poorSignal)
         print("attention = " ,attention)
         print("meditation = " ,meditation)
+        let dateString = Date().toString(format: "yyyy-MM-dd HH:mm:ss")
+        let eegeSense = EegeSense(poorSignal: Int(poorSignal), attention: Int(attention), meditation: Int(meditation), userId: self.userId, mwmcreatedAt: dateString)
+        IsaiSensingAPI.PostMWMeSenseData().request(eegeSense: eegeSense) { response in
+            let json = response.json
+            if json["code"].intValue == ApplicationConfig.API.responseSuccess {
+                print("post success")
+            } else {
+                print("post fauilure")
+            }
+        }
     }
 
 }

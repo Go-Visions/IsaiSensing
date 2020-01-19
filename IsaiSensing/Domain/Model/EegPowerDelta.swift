@@ -12,4 +12,6 @@ struct EegPowerDelta {
     let theta: Int
     let lowAlpha: Int
     let highAlpha: Int
+    let userId: Int
+    let mwmcreatedAt: String
 }
