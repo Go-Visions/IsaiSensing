@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class HomeController: UIViewController, MWMDelegate {
     
@@ -53,6 +54,15 @@ class HomeController: UIViewController, MWMDelegate {
         print("theta = " ,theta)
         print("lowAlpha = " ,lowAlpha)
         print("highAlpha = " ,highAlpha)
+        let eegPowerDeltaData = EegPowerDelta(delta: Int(delta), theta: Int(theta), lowAlpha: Int(lowAlpha), highAlpha: Int(highAlpha))
+        IsaiSensingAPI.PostMWMData().request(eegPowerDelta: eegPowerDeltaData) { response in
+            let json = response.json
+            if json["code"].intValue == ApplicationConfig.API.responseSuccess {
+                print("post success")
+            } else {
+                print("post fauilure")
+            }
+        }
     }
     
     /// 脳波データ取得時のメソッド(Beta(low, high), Gamma(low, high)

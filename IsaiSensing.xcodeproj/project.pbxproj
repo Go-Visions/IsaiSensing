@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,14 @@
 		451BD0A323D07C5000C2668B /* IsaiSensingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0A223D07C5000C2668B /* IsaiSensingTests.swift */; };
 		451BD0AE23D07C5000C2668B /* IsaiSensingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0AD23D07C5000C2668B /* IsaiSensingUITests.swift */; };
 		451BD0C023D0A3A900C2668B /* libMWMSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 451BD0BD23D0A3A900C2668B /* libMWMSDK.a */; };
+		451BD0CC23D3257500C2668B /* EegPowerDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0CB23D3257500C2668B /* EegPowerDelta.swift */; };
+		451BD0CF23D3262500C2668B /* IsaiSenseingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0CE23D3262500C2668B /* IsaiSenseingAPI.swift */; };
+		451BD0D123D3271500C2668B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D023D3271500C2668B /* AppError.swift */; };
+		451BD0D323D3278500C2668B /* ApplicationConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D223D3278500C2668B /* ApplicationConfig.swift */; };
+		451BD0D523D3285A00C2668B /* ApplicationsUIString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D423D3285A00C2668B /* ApplicationsUIString.swift */; };
+		93A1497C761B84E27B55F293 /* Pods_IsaiSensing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C592772B3D11DE10A2B49D6A /* Pods_IsaiSensing.framework */; };
+		9E94A8322AEDD2D84C93813A /* Pods_IsaiSensingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852DA9A9B4C03B7BD1189D7 /* Pods_IsaiSensingTests.framework */; };
+		FC92B9B0948CE031BC766FA2 /* Pods_IsaiSensingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A41C330DB8D321748AC5 /* Pods_IsaiSensingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01181FED0541F69CB860FE2C /* Pods-IsaiSensing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensing.release.xcconfig"; path = "Target Support Files/Pods-IsaiSensing/Pods-IsaiSensing.release.xcconfig"; sourceTree = "<group>"; };
 		451BD08823D07C4D00C2668B /* IsaiSensing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsaiSensing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		451BD08B23D07C4D00C2668B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		451BD08D23D07C4D00C2668B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +64,19 @@
 		451BD0BE23D0A3A900C2668B /* MWMDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMDelegate.h; sourceTree = "<group>"; };
 		451BD0BF23D0A3A900C2668B /* MWMEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWMEnum.h; sourceTree = "<group>"; };
 		451BD0C123D0A3FD00C2668B /* IsaiSensing_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsaiSensing_Bridging_Header.h; sourceTree = "<group>"; };
+		451BD0CB23D3257500C2668B /* EegPowerDelta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EegPowerDelta.swift; sourceTree = "<group>"; };
+		451BD0CE23D3262500C2668B /* IsaiSenseingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsaiSenseingAPI.swift; sourceTree = "<group>"; };
+		451BD0D023D3271500C2668B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		451BD0D223D3278500C2668B /* ApplicationConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfig.swift; sourceTree = "<group>"; };
+		451BD0D423D3285A00C2668B /* ApplicationsUIString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationsUIString.swift; sourceTree = "<group>"; };
+		5C60EE799BE90E9B52705BBA /* Pods-IsaiSensing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensing.debug.xcconfig"; path = "Target Support Files/Pods-IsaiSensing/Pods-IsaiSensing.debug.xcconfig"; sourceTree = "<group>"; };
+		7C79A41C330DB8D321748AC5 /* Pods_IsaiSensingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsaiSensingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847BC285CA1CBF574CC7CEA4 /* Pods-IsaiSensingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensingTests.release.xcconfig"; path = "Target Support Files/Pods-IsaiSensingTests/Pods-IsaiSensingTests.release.xcconfig"; sourceTree = "<group>"; };
+		9852DA9A9B4C03B7BD1189D7 /* Pods_IsaiSensingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsaiSensingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CD6925F47EF8E46C904B9D /* Pods-IsaiSensingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensingUITests.release.xcconfig"; path = "Target Support Files/Pods-IsaiSensingUITests/Pods-IsaiSensingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C592772B3D11DE10A2B49D6A /* Pods_IsaiSensing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsaiSensing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0A4A92B7061D9446CC8695 /* Pods-IsaiSensingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensingUITests.debug.xcconfig"; path = "Target Support Files/Pods-IsaiSensingUITests/Pods-IsaiSensingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0D2058F2ED6A5DC688F7DC8 /* Pods-IsaiSensingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensingTests.debug.xcconfig"; path = "Target Support Files/Pods-IsaiSensingTests/Pods-IsaiSensingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				451BD0C023D0A3A900C2668B /* libMWMSDK.a in Frameworks */,
+				93A1497C761B84E27B55F293 /* Pods_IsaiSensing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E94A8322AEDD2D84C93813A /* Pods_IsaiSensingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC92B9B0948CE031BC766FA2 /* Pods_IsaiSensingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +116,8 @@
 				451BD0A123D07C5000C2668B /* IsaiSensingTests */,
 				451BD0AC23D07C5000C2668B /* IsaiSensingUITests */,
 				451BD08923D07C4D00C2668B /* Products */,
+				F585475C70007BB61B826ACA /* Pods */,
+				C518E779080D4F0274122FC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +182,8 @@
 			children = (
 				451BD08B23D07C4D00C2668B /* AppDelegate.swift */,
 				451BD08D23D07C4D00C2668B /* SceneDelegate.swift */,
+				451BD0D223D3278500C2668B /* ApplicationConfig.swift */,
+				451BD0D423D3285A00C2668B /* ApplicationsUIString.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -171,6 +200,7 @@
 		451BD0C523D1934900C2668B /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				451BD0CD23D325FF00C2668B /* API */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -193,6 +223,8 @@
 		451BD0C823D1966E00C2668B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				451BD0CB23D3257500C2668B /* EegPowerDelta.swift */,
+				451BD0D023D3271500C2668B /* AppError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,6 +244,37 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		451BD0CD23D325FF00C2668B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				451BD0CE23D3262500C2668B /* IsaiSenseingAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C518E779080D4F0274122FC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C592772B3D11DE10A2B49D6A /* Pods_IsaiSensing.framework */,
+				9852DA9A9B4C03B7BD1189D7 /* Pods_IsaiSensingTests.framework */,
+				7C79A41C330DB8D321748AC5 /* Pods_IsaiSensingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F585475C70007BB61B826ACA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C60EE799BE90E9B52705BBA /* Pods-IsaiSensing.debug.xcconfig */,
+				01181FED0541F69CB860FE2C /* Pods-IsaiSensing.release.xcconfig */,
+				E0D2058F2ED6A5DC688F7DC8 /* Pods-IsaiSensingTests.debug.xcconfig */,
+				847BC285CA1CBF574CC7CEA4 /* Pods-IsaiSensingTests.release.xcconfig */,
+				CF0A4A92B7061D9446CC8695 /* Pods-IsaiSensingUITests.debug.xcconfig */,
+				C3CD6925F47EF8E46C904B9D /* Pods-IsaiSensingUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 451BD0B223D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensing" */;
 			buildPhases = (
+				FC017640A517A3AD8606FC14 /* [CP] Check Pods Manifest.lock */,
 				451BD08423D07C4D00C2668B /* Sources */,
 				451BD08523D07C4D00C2668B /* Frameworks */,
 				451BD08623D07C4D00C2668B /* Resources */,
+				B15F4D0DF25F7C2BB96AC323 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +301,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 451BD0B523D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensingTests" */;
 			buildPhases = (
+				A5D372182AB4C20E62925FD9 /* [CP] Check Pods Manifest.lock */,
 				451BD09A23D07C5000C2668B /* Sources */,
 				451BD09B23D07C5000C2668B /* Frameworks */,
 				451BD09C23D07C5000C2668B /* Resources */,
@@ -254,6 +320,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 451BD0B823D07C5000C2668B /* Build configuration list for PBXNativeTarget "IsaiSensingUITests" */;
 			buildPhases = (
+				D25E14E9EB33296487B0DCC5 /* [CP] Check Pods Manifest.lock */,
 				451BD0A523D07C5000C2668B /* Sources */,
 				451BD0A623D07C5000C2668B /* Frameworks */,
 				451BD0A723D07C5000C2668B /* Resources */,
@@ -338,14 +405,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A5D372182AB4C20E62925FD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IsaiSensingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15F4D0DF25F7C2BB96AC323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IsaiSensing/Pods-IsaiSensing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IsaiSensing/Pods-IsaiSensing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IsaiSensing/Pods-IsaiSensing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D25E14E9EB33296487B0DCC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IsaiSensingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC017640A517A3AD8606FC14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IsaiSensing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		451BD08423D07C4D00C2668B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				451BD09023D07C4D00C2668B /* HomeController.swift in Sources */,
+				451BD0D523D3285A00C2668B /* ApplicationsUIString.swift in Sources */,
 				451BD08C23D07C4D00C2668B /* AppDelegate.swift in Sources */,
+				451BD0D123D3271500C2668B /* AppError.swift in Sources */,
+				451BD0CF23D3262500C2668B /* IsaiSenseingAPI.swift in Sources */,
+				451BD0CC23D3257500C2668B /* EegPowerDelta.swift in Sources */,
 				451BD08E23D07C4D00C2668B /* SceneDelegate.swift in Sources */,
+				451BD0D323D3278500C2668B /* ApplicationConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +674,7 @@
 		};
 		451BD0B323D07C5000C2668B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C60EE799BE90E9B52705BBA /* Pods-IsaiSensing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +698,7 @@
 		};
 		451BD0B423D07C5000C2668B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01181FED0541F69CB860FE2C /* Pods-IsaiSensing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +722,7 @@
 		};
 		451BD0B623D07C5000C2668B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0D2058F2ED6A5DC688F7DC8 /* Pods-IsaiSensingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +745,7 @@
 		};
 		451BD0B723D07C5000C2668B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 847BC285CA1CBF574CC7CEA4 /* Pods-IsaiSensingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -606,6 +768,7 @@
 		};
 		451BD0B923D07C5000C2668B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0A4A92B7061D9446CC8695 /* Pods-IsaiSensingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -626,6 +789,7 @@
 		};
 		451BD0BA23D07C5000C2668B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3CD6925F47EF8E46C904B9D /* Pods-IsaiSensingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
