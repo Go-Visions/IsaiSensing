@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		451BD08C23D07C4D00C2668B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08B23D07C4D00C2668B /* AppDelegate.swift */; };
 		451BD08E23D07C4D00C2668B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08D23D07C4D00C2668B /* SceneDelegate.swift */; };
-		451BD09023D07C4D00C2668B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08F23D07C4D00C2668B /* HomeController.swift */; };
+		451BD09023D07C4D00C2668B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD08F23D07C4D00C2668B /* HomeViewController.swift */; };
 		451BD09323D07C4D00C2668B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09123D07C4D00C2668B /* Main.storyboard */; };
 		451BD09523D07C4F00C2668B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09423D07C4F00C2668B /* Assets.xcassets */; };
 		451BD09823D07C4F00C2668B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451BD09623D07C4F00C2668B /* LaunchScreen.storyboard */; };
@@ -24,6 +24,20 @@
 		451BD0D723D44AD500C2668B /* EegPowerLowBeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D623D44AD500C2668B /* EegPowerLowBeta.swift */; };
 		451BD0D923D44AE300C2668B /* EeSense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0D823D44AE300C2668B /* EeSense.swift */; };
 		451BD0DC23D4522300C2668B /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451BD0DB23D4522300C2668B /* Date+String.swift */; };
+		45446B1823D7116F00A021F0 /* BluetoothDeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45446B1623D7116F00A021F0 /* BluetoothDeviceTableViewCell.swift */; };
+		45446B1923D7116F00A021F0 /* BluetoothDeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45446B1723D7116F00A021F0 /* BluetoothDeviceTableViewCell.xib */; };
+		45446B1B23DB279400A021F0 /* MiBand4Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45446B1A23DB279400A021F0 /* MiBand4Service.swift */; };
+		45446B5D23DDBB4C00A021F0 /* Data+ChunkedHexEncodedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45446B5C23DDBB4C00A021F0 /* Data+ChunkedHexEncodedString.swift */; };
+		45446B5F23DF03F700A021F0 /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45446B5E23DF03F700A021F0 /* HeartRate.swift */; };
+		459B5F7C23E95F3000C2662A /* UIViewController+dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B5F7B23E95F3000C2662A /* UIViewController+dialog.swift */; };
+		459B5F8123E966C900C2662A /* orangebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 459B5F7E23E966C800C2662A /* orangebar.png */; };
+		459B5F8223E966C900C2662A /* redbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 459B5F7F23E966C800C2662A /* redbar.png */; };
+		459B5F8323E966C900C2662A /* greenbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 459B5F8023E966C900C2662A /* greenbar.png */; };
+		459B5F8623E9982400C2662A /* RealmEegPowerDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B5F8523E9982400C2662A /* RealmEegPowerDelta.swift */; };
+		459B5F8823E9990700C2662A /* RealmEegPowerLowBeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B5F8723E9990700C2662A /* RealmEegPowerLowBeta.swift */; };
+		459B5F8A23E9991500C2662A /* RealmEeSense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B5F8923E9991500C2662A /* RealmEeSense.swift */; };
+		459B5F8C23E9992100C2662A /* RealmHeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459B5F8B23E9992100C2662A /* RealmHeartRate.swift */; };
+		45C2DAC723EC2FDB00D39364 /* user_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 45C2DAC623EC2FDB00D39364 /* user_icon.png */; };
 		93A1497C761B84E27B55F293 /* Pods_IsaiSensing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C592772B3D11DE10A2B49D6A /* Pods_IsaiSensing.framework */; };
 		9E94A8322AEDD2D84C93813A /* Pods_IsaiSensingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9852DA9A9B4C03B7BD1189D7 /* Pods_IsaiSensingTests.framework */; };
 		FC92B9B0948CE031BC766FA2 /* Pods_IsaiSensingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C79A41C330DB8D321748AC5 /* Pods_IsaiSensingUITests.framework */; };
@@ -51,7 +65,7 @@
 		451BD08823D07C4D00C2668B /* IsaiSensing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsaiSensing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		451BD08B23D07C4D00C2668B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		451BD08D23D07C4D00C2668B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		451BD08F23D07C4D00C2668B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		451BD08F23D07C4D00C2668B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		451BD09223D07C4D00C2668B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		451BD09423D07C4F00C2668B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451BD09723D07C4F00C2668B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -75,6 +89,20 @@
 		451BD0D623D44AD500C2668B /* EegPowerLowBeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EegPowerLowBeta.swift; sourceTree = "<group>"; };
 		451BD0D823D44AE300C2668B /* EeSense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EeSense.swift; sourceTree = "<group>"; };
 		451BD0DB23D4522300C2668B /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		45446B1623D7116F00A021F0 /* BluetoothDeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDeviceTableViewCell.swift; sourceTree = "<group>"; };
+		45446B1723D7116F00A021F0 /* BluetoothDeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BluetoothDeviceTableViewCell.xib; sourceTree = "<group>"; };
+		45446B1A23DB279400A021F0 /* MiBand4Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiBand4Service.swift; sourceTree = "<group>"; };
+		45446B5C23DDBB4C00A021F0 /* Data+ChunkedHexEncodedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ChunkedHexEncodedString.swift"; sourceTree = "<group>"; };
+		45446B5E23DF03F700A021F0 /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
+		459B5F7B23E95F3000C2662A /* UIViewController+dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+dialog.swift"; sourceTree = "<group>"; };
+		459B5F7E23E966C800C2662A /* orangebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangebar.png; sourceTree = "<group>"; };
+		459B5F7F23E966C800C2662A /* redbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redbar.png; sourceTree = "<group>"; };
+		459B5F8023E966C900C2662A /* greenbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenbar.png; sourceTree = "<group>"; };
+		459B5F8523E9982400C2662A /* RealmEegPowerDelta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmEegPowerDelta.swift; sourceTree = "<group>"; };
+		459B5F8723E9990700C2662A /* RealmEegPowerLowBeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmEegPowerLowBeta.swift; sourceTree = "<group>"; };
+		459B5F8923E9991500C2662A /* RealmEeSense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmEeSense.swift; sourceTree = "<group>"; };
+		459B5F8B23E9992100C2662A /* RealmHeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHeartRate.swift; sourceTree = "<group>"; };
+		45C2DAC623EC2FDB00D39364 /* user_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_icon.png; sourceTree = "<group>"; };
 		5C60EE799BE90E9B52705BBA /* Pods-IsaiSensing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensing.debug.xcconfig"; path = "Target Support Files/Pods-IsaiSensing/Pods-IsaiSensing.debug.xcconfig"; sourceTree = "<group>"; };
 		7C79A41C330DB8D321748AC5 /* Pods_IsaiSensingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsaiSensingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		847BC285CA1CBF574CC7CEA4 /* Pods-IsaiSensingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsaiSensingTests.release.xcconfig"; path = "Target Support Files/Pods-IsaiSensingTests/Pods-IsaiSensingTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -214,7 +242,8 @@
 		451BD0C623D193E600C2668B /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				451BD0C823D1966E00C2668B /* Model */,
+				459B5F8423E997F400C2662A /* RealmModel */,
+				451BD0C823D1966E00C2668B /* APIModel */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -222,19 +251,22 @@
 		451BD0C723D193F800C2668B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				459B5F7D23E9669F00C2662A /* Images */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		451BD0C823D1966E00C2668B /* Model */ = {
+		451BD0C823D1966E00C2668B /* APIModel */ = {
 			isa = PBXGroup;
 			children = (
 				451BD0CB23D3257500C2668B /* EegPowerDelta.swift */,
 				451BD0D623D44AD500C2668B /* EegPowerLowBeta.swift */,
 				451BD0D823D44AE300C2668B /* EeSense.swift */,
+				45446B5E23DF03F700A021F0 /* HeartRate.swift */,
 				451BD0D023D3271500C2668B /* AppError.swift */,
+				45446B1A23DB279400A021F0 /* MiBand4Service.swift */,
 			);
-			path = Model;
+			path = APIModel;
 			sourceTree = "<group>";
 		};
 		451BD0C923D196A400C2668B /* Common */ = {
@@ -248,7 +280,9 @@
 		451BD0CA23D196AE00C2668B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				451BD08F23D07C4D00C2668B /* HomeController.swift */,
+				451BD08F23D07C4D00C2668B /* HomeViewController.swift */,
+				45446B1623D7116F00A021F0 /* BluetoothDeviceTableViewCell.swift */,
+				45446B1723D7116F00A021F0 /* BluetoothDeviceTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -265,8 +299,32 @@
 			isa = PBXGroup;
 			children = (
 				451BD0DB23D4522300C2668B /* Date+String.swift */,
+				45446B5C23DDBB4C00A021F0 /* Data+ChunkedHexEncodedString.swift */,
+				459B5F7B23E95F3000C2662A /* UIViewController+dialog.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		459B5F7D23E9669F00C2662A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				45C2DAC623EC2FDB00D39364 /* user_icon.png */,
+				459B5F8023E966C900C2662A /* greenbar.png */,
+				459B5F7E23E966C800C2662A /* orangebar.png */,
+				459B5F7F23E966C800C2662A /* redbar.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		459B5F8423E997F400C2662A /* RealmModel */ = {
+			isa = PBXGroup;
+			children = (
+				459B5F8523E9982400C2662A /* RealmEegPowerDelta.swift */,
+				459B5F8723E9990700C2662A /* RealmEegPowerLowBeta.swift */,
+				459B5F8923E9991500C2662A /* RealmEeSense.swift */,
+				459B5F8B23E9992100C2662A /* RealmHeartRate.swift */,
+			);
+			path = RealmModel;
 			sourceTree = "<group>";
 		};
 		C518E779080D4F0274122FC5 /* Frameworks */ = {
@@ -400,9 +458,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45446B1923D7116F00A021F0 /* BluetoothDeviceTableViewCell.xib in Resources */,
+				459B5F8123E966C900C2662A /* orangebar.png in Resources */,
 				451BD09823D07C4F00C2668B /* LaunchScreen.storyboard in Resources */,
+				459B5F8223E966C900C2662A /* redbar.png in Resources */,
 				451BD09523D07C4F00C2668B /* Assets.xcassets in Resources */,
+				459B5F8323E966C900C2662A /* greenbar.png in Resources */,
 				451BD09323D07C4D00C2668B /* Main.storyboard in Resources */,
+				45C2DAC723EC2FDB00D39364 /* user_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,16 +576,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				451BD09023D07C4D00C2668B /* HomeController.swift in Sources */,
+				459B5F7C23E95F3000C2662A /* UIViewController+dialog.swift in Sources */,
+				45446B5D23DDBB4C00A021F0 /* Data+ChunkedHexEncodedString.swift in Sources */,
+				451BD09023D07C4D00C2668B /* HomeViewController.swift in Sources */,
 				451BD0D523D3285A00C2668B /* ApplicationsUIString.swift in Sources */,
 				451BD08C23D07C4D00C2668B /* AppDelegate.swift in Sources */,
+				45446B5F23DF03F700A021F0 /* HeartRate.swift in Sources */,
 				451BD0D123D3271500C2668B /* AppError.swift in Sources */,
 				451BD0CF23D3262500C2668B /* IsaiSenseingAPI.swift in Sources */,
+				459B5F8C23E9992100C2662A /* RealmHeartRate.swift in Sources */,
+				45446B1823D7116F00A021F0 /* BluetoothDeviceTableViewCell.swift in Sources */,
 				451BD0CC23D3257500C2668B /* EegPowerDelta.swift in Sources */,
+				459B5F8623E9982400C2662A /* RealmEegPowerDelta.swift in Sources */,
 				451BD0D923D44AE300C2668B /* EeSense.swift in Sources */,
 				451BD0DC23D4522300C2668B /* Date+String.swift in Sources */,
 				451BD0D723D44AD500C2668B /* EegPowerLowBeta.swift in Sources */,
+				459B5F8A23E9991500C2662A /* RealmEeSense.swift in Sources */,
 				451BD08E23D07C4D00C2668B /* SceneDelegate.swift in Sources */,
+				45446B1B23DB279400A021F0 /* MiBand4Service.swift in Sources */,
+				459B5F8823E9990700C2662A /* RealmEegPowerLowBeta.swift in Sources */,
 				451BD0D323D3278500C2668B /* ApplicationConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,7 +700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -682,7 +754,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

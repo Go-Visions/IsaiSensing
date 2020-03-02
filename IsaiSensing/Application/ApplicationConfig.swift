@@ -9,7 +9,7 @@
 import Foundation
 class ApplicationConfig {
     class API {
-        static let baseUrlString = "https:// /api"
+        static let baseUrlString = "https://f13f9f52.ngrok.io/api"
 //        #if LOCAL
 //           static let baseUrlString = ""
 //        #elseif STAGING

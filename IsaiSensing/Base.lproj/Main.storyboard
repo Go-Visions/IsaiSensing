@@ -7,38 +7,184 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeController" customModule="IsaiSensing" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="IsaiSensing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWd-Fb-Njs">
-                                <rect key="frame" x="190" y="251" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Scan"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="9AA-aN-vmR">
+                                <rect key="frame" x="105" y="182" width="204" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWd-Fb-Njs">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Scan"/>
+                                        <connections>
+                                            <action selector="ScanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAg-9d-w3r"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3a-zc-fXl">
+                                        <rect key="frame" x="104" y="0.0" width="100" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="disConnect"/>
+                                        <connections>
+                                            <action selector="disConnectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ERL-em-oXe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ZPR-kD-KCd"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CvS-iY-cfh">
+                                <rect key="frame" x="0.0" y="632" width="414" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="x6G-hB-ZyR"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MiBandDevices" id="etV-Ez-jSi">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="etV-Ez-jSi" id="c40-jT-d2x">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8l-th-hQE">
+                                <rect key="frame" x="82" y="54" width="24.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubi-cd-LBa">
+                                <rect key="frame" x="30" y="49" width="42" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="K7m-xj-FDi"/>
+                                    <constraint firstAttribute="width" secondItem="ubi-cd-LBa" secondAttribute="height" multiplier="21:17" id="TSq-Pe-MSe"/>
+                                    <constraint firstAttribute="width" constant="42" id="Udp-dN-C6V"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="user_icon.png"/>
+                            </button>
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="enI-sd-14I">
+                                <rect key="frame" x="0.0" y="321" width="414" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="z9o-4D-MJN"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MWMDevices" id="jJZ-Up-2SS">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jJZ-Up-2SS" id="af3-lr-IMz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="yeI-fM-gXc">
+                                <rect key="frame" x="133.5" y="591" width="147" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Band 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZs-zQ-J0n">
+                                        <rect key="frame" x="0.0" y="0.0" width="77" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPZ-Yz-tPr">
+                                        <rect key="frame" x="103" y="0.0" width="44" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Scan"/>
+                                        <connections>
+                                            <action selector="miBandScanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PRe-cZ-u8D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="8cu-mo-GRg"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MCD-2B-wux">
+                                <rect key="frame" x="109.5" y="46" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Heb-qI-bTs"/>
+                                    <constraint firstAttribute="height" constant="40" id="mtr-Hv-Shp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkG-Qe-jBg">
+                                <rect key="frame" x="256" y="51" width="138" height="30"/>
+                                <state key="normal" title="モード：保存しない"/>
                                 <connections>
-                                    <action selector="ScanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CrP-sf-euL"/>
+                                    <action selector="changeModeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tog-CG-i4C"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3a-zc-fXl">
-                                <rect key="frame" x="168" y="326" width="79" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="disConnect"/>
-                                <connections>
-                                    <action selector="disConnectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lte-7x-xyh"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="j8c-y1-BTc">
+                                <rect key="frame" x="79" y="126" width="256" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MindWaveMobile2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpT-Lg-y4S">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redbar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Du2-ff-0ol">
+                                        <rect key="frame" x="149" y="0.0" width="107" height="36"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="4uW-dH-ncI"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="enI-sd-14I" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0sR-fH-ZDj"/>
+                            <constraint firstItem="CvS-iY-cfh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1bZ-fx-zBF"/>
+                            <constraint firstItem="enI-sd-14I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6be-ZQ-ZAg"/>
+                            <constraint firstItem="j8c-y1-BTc" firstAttribute="top" secondItem="MCD-2B-wux" secondAttribute="bottom" constant="40" id="8iH-4n-uan"/>
+                            <constraint firstItem="CvS-iY-cfh" firstAttribute="top" secondItem="yeI-fM-gXc" secondAttribute="bottom" constant="5" id="9lI-jY-O3e"/>
+                            <constraint firstItem="ubi-cd-LBa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="AcS-Vu-p0a"/>
+                            <constraint firstItem="yeI-fM-gXc" firstAttribute="top" secondItem="enI-sd-14I" secondAttribute="bottom" constant="20" id="BuM-Xm-iSh"/>
+                            <constraint firstItem="9AA-aN-vmR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ERt-vW-T6k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wkG-Qe-jBg" secondAttribute="trailing" constant="20" id="GI7-bh-t2V"/>
+                            <constraint firstItem="MCD-2B-wux" firstAttribute="centerY" secondItem="G8l-th-hQE" secondAttribute="centerY" id="L64-9m-ztU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CvS-iY-cfh" secondAttribute="bottom" constant="30" id="P9p-I5-XMS"/>
+                            <constraint firstItem="j8c-y1-BTc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RCM-lk-Z8B"/>
+                            <constraint firstItem="wkG-Qe-jBg" firstAttribute="centerY" secondItem="MCD-2B-wux" secondAttribute="centerY" id="Yb0-LW-oYg"/>
+                            <constraint firstItem="CvS-iY-cfh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Zbu-8c-mTF"/>
+                            <constraint firstItem="G8l-th-hQE" firstAttribute="leading" secondItem="ubi-cd-LBa" secondAttribute="trailing" constant="10" id="c8h-j3-c6n"/>
+                            <constraint firstItem="MCD-2B-wux" firstAttribute="leading" secondItem="G8l-th-hQE" secondAttribute="trailing" constant="3" id="cVt-3C-sTL"/>
+                            <constraint firstItem="9AA-aN-vmR" firstAttribute="top" secondItem="j8c-y1-BTc" secondAttribute="bottom" constant="20" id="dug-ef-vtt"/>
+                            <constraint firstItem="yeI-fM-gXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMY-95-IAd"/>
+                            <constraint firstItem="G8l-th-hQE" firstAttribute="centerY" secondItem="ubi-cd-LBa" secondAttribute="centerY" id="n3U-yV-RS8"/>
+                            <constraint firstItem="ubi-cd-LBa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="nJk-z7-7Vu"/>
+                            <constraint firstItem="enI-sd-14I" firstAttribute="top" secondItem="9AA-aN-vmR" secondAttribute="bottom" constant="20" id="onC-aJ-SFp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="idTextField" destination="MCD-2B-wux" id="CB9-7h-qau"/>
+                        <outlet property="miBandDeviceListTable" destination="CvS-iY-cfh" id="aMY-YE-IeX"/>
+                        <outlet property="mindWaveMobileDeviceListTable" destination="enI-sd-14I" id="Vuu-KL-8kf"/>
+                        <outlet property="modeButton" destination="wkG-Qe-jBg" id="0Jg-tX-hUp"/>
+                        <outlet property="mwmConnectLevel" destination="Du2-ff-0ol" id="fhD-Sd-kc1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133" y="139"/>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="redbar.png" width="107" height="43"/>
+        <image name="user_icon.png" width="256" height="256"/>
+    </resources>
 </document>

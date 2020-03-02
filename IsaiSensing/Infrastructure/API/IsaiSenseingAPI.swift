@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-
 class IsaiSensingAPI {
     //共通部
     enum ResultCode: Int {
@@ -205,6 +204,46 @@ extension IsaiSensingAPI {
             ]
             IsaiSensingAPI.instance.request(
                 endPoint: "/esense",
+                parameters: parameters) { response, _ in
+                    let json: JSON
+                    switch response {
+                    case .success(let value): json = value
+                    case .failure(let error):
+                        completionHandler(Response(
+                            resultCode: IsaiSensingAPI.ResultCode.fromError(error).code,
+                            errorMessage: error.localizedDescription,
+                            json: JSON()))
+
+                        return
+                    }
+                    let resultCode = json["resultCode"].int
+                    let errorMessage = json["errorMessage"].string
+                    completionHandler(Response(
+                        resultCode: resultCode,
+                        errorMessage: errorMessage,
+                        json: json
+                    ))
+            }
+        }
+
+        struct Response {
+            let resultCode: Int?
+            let errorMessage: String?
+            let json: JSON
+        }
+    }
+    
+    /// Mi band4  心拍データをサーバにpost
+    /// heartRateをpost
+    class PostHeartRate {
+        func request(heartRate: HeartRate, completionHandler: @escaping (Response) -> Void) {
+            let parameters: Parameters = [
+                "heart_rate": heartRate.heartRate,
+                "user_id": heartRate.userId,
+                "mbcreated_at": heartRate.mbcreatedAt
+            ]
+            IsaiSensingAPI.instance.request(
+                endPoint: "/heartrate",
                 parameters: parameters) { response, _ in
                     let json: JSON
                     switch response {
